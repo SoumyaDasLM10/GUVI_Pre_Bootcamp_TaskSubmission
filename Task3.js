@@ -144,3 +144,49 @@ var friends4 = [
     }
     addMr(friends4);
     console.log(friends4);
+
+
+//Find the name with max characters and return the name.
+let friends5 = [
+    "Mari",
+    "MaryJane",
+    "CaptianAmerica",
+    "Munnabai",
+    "Jeff",
+    "AAK chandran"
+    ];
+
+    function findLongestName(input){
+        let longest = input[0].length;
+        for(let i = 0; i < input.length; i++){
+            if(input[i].length > longest){
+                longest = input[i].length;
+                index = i;
+            }
+        }
+        return input[index];       
+    }  
+    console.log(findLongestName(friends5));
+
+
+//Find the average in the array below.
+//Make sure you add only the numbers and do avg.
+const friendsInfo = [6, 12, "Mari", 1, true, "Munnabai", "200", "CaptianAmerica", 8, 10];
+function onlyNum(input) {
+    let sum = 0;
+    let count = 0;
+    for(let i = 0; i < input.length; i++) {
+        if(typeof(friendsInfo[i]) === "number"){
+            sum = sum + friendsInfo[i];
+            count = count + 1;
+        }
+    }
+    return (sum/count);
+}
+console.log(onlyNum(friendsInfo));
+
+
+//Print the contents
+myobject = {1:"one","11":1,"name":"arun"}
+console.log(myobject[11]); 
+console.log(myobject["name"]);
