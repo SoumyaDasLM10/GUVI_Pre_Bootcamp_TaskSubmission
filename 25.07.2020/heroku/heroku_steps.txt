@@ -1,0 +1,13 @@
+1. Logged into heroku with valid account credentials
+2. Cloned a sample git repo from heroku
+3. Renamed folder, edited package.json
+4. Ran the following commands after that:
+	(Open the command prompt at the folder where package.json is present)
+	heroku login  (for logging in)
+	heroku create shielded-dawn-23986  (to create my own app)
+	git push heroku master  (to deploy the app in heroku)
+	heroku ps:scale web=1   (to check that one instance of the app is running after deployment)
+	heroku open   (to open in web)
+	heroku local web  (to run the app locally)
+	
+	
